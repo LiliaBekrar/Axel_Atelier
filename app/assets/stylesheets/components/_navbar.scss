@@ -1,12 +1,57 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 0.8240546218487395) 79%, rgba(255, 255, 255, 0) 100%);
+   a {
+    color: white;
+    text-decoration: none;
+   }
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  li {
+    padding: 0 1vw;
+    padding-top: -1vw;
+  }
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+#logo {
+  width: 25vw;
+  padding-top: 1vw;
+}
+
+.little-icon {
+  max-height: 10px;
+  align-self: center;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.fa-angle-down {
+  text-align: end;
+  position: relative;
+  top: 0.15vw;
+}
+// .nav-link img:hover {
+//   opacity: 0;
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+// }
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
 }
