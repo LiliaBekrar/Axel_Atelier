@@ -1,0 +1,38 @@
+ <% @images = { :url => "https://images.unsplash.com/photo-1494516192674-b82b5f1e61dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dceb61261b1e2d4e2f09137b8740b1ca&auto=format&fit=crop&w=633&q=80",
+                :name => "Découvrir",
+                :title => "Découvrez nos produits",
+                :description => "Découvrez l'harmonie entre l'art et la mécanique : plongez dans un univers où chaque création est une œuvre d'ingéniosité et de passion, façonnée à la main pour éveiller vos sens et défier la gravité"
+                },
+
+{   :url => "https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fd0a9edabe9fd24d887dd3665be3268e&auto=format&fit=crop&w=1050&q=80",
+                :name => "S'inspirer",
+                :title => "soyez inspiré",
+                :description => "Transformez vos rêves en réalité mécanique : explorez notre plateforme pour donner vie à des objets d'art uniques et sur mesure, conçus pour captiver et émerveiller à chaque mouvement."
+                },
+{ :url => "https://images.unsplash.com/photo-1504278524404-ef6a2b4c86f7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=176a32dd3fafbabfd0c3a1e6494c646b&auto=format&fit=crop&w=1052&q=80",
+                :name => "Innover",
+                :title => "Réalisons vos rêves",
+                :description => "Devenez le créateur de votre propre conte mécanique : confiez-moi vos désirs les plus fous, de l'envol gracieux d'un colibri mécanique aux horloges enchantées, et laissez-moi vous guider vers la concrétisation de votre vision. Offrez-vous l'opportunité de voir vos rêves prendre vie, avec l'assurance d'un artisan dévoué à votre satisfaction."}
+
+%>
+
+
+
+<div class="container cards">
+ <% @images.each do |image| %>
+  <figure class="card">
+      <div class="corner left-top"></div>
+      <div class="corner left-bottom"></div>
+      <div class="corner right-top"></div>
+      <div class="corner right-bottom"></div>
+      <%= tag.img src: image[:url], alt: image[:name] %>
+      <figcaption>
+      <h1 class="title-discovery"><%=image[:name].upcase %></h1>
+          <h2><%= image[:title].upcase %></h3>
+          <p>
+              <%= image[:description]%>
+          </p>
+      </figcaption>
+  </figure>
+ <% end %>
+</div>
