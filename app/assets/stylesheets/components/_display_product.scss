@@ -1,5 +1,5 @@
 $taille_img: 10vw;
-$gap: 0;
+$gap: .65vW;
 
 
 // * {
@@ -14,16 +14,17 @@ $gap: 0;
 .image-secondary {
   flex-shrink: 1;
   max-width: $taille_img;
+  gap: $gap;
 }
 
 .img-secondary-product {
   aspect-ratio: 1 / 1;
-  padding: clamp(.25vw,.25vw, .5vw);
 
 }
 
 .image-tierce {
   max-height: $taille_img;
+  gap: $gap;
   img {
     aspect-ratio: 1 / 1;
     max-width: 24%;
@@ -31,6 +32,7 @@ $gap: 0;
 }
 .img-principale {
 flex-shrink: 1;
+flex-grow: 1;
 max-width: 100%;
 height: 100%;
   img {
@@ -50,7 +52,7 @@ height: 100%;
 }
 
 .product-other {
-  max-width: 42%;
+  max-width: 37%;
 }
 
 .en-stock {
@@ -71,5 +73,5 @@ height: 100%;
 }
 
 .other-articles {
-  margin-top: 2vw;
+  margin-top: 4vw;
 }
