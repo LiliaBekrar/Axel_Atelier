@@ -1,5 +1,5 @@
 $taille_img: 10vw;
-$gap: 0;
+$gap: .25vW;
 
 
 // * {
@@ -14,16 +14,17 @@ $gap: 0;
 .image-secondary {
   flex-shrink: 1;
   max-width: $taille_img;
+  gap: $gap;
 }
 
 .img-secondary-product {
   aspect-ratio: 1 / 1;
-  padding: clamp(.25vw,.25vw, .5vw);
 
 }
 
 .image-tierce {
   max-height: $taille_img;
+  gap: $gap;
   img {
     aspect-ratio: 1 / 1;
     max-width: 24%;
