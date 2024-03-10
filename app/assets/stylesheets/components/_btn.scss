@@ -1,0 +1,56 @@
+.button {
+  height: min-content;
+  width: max-content;
+  justify-content: initial;
+  align-items: initial;
+  display: inline-block;
+  font-family: Roboto;
+  text-transform: capitalize;
+  background-color: black;
+  color: #fff;
+  position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 1em;
+    border-radius: 7px;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-product:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px black inset;
+  // font-weight: 500;
+}
+
+.btn-add-product:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-product::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-add-product::after {
+  background-color: #000;
+}
+
+.btn-add-product:hover::after {
+  transform: scaleX(1.1) scaleY(1.2);
+  opacity: 0;
+}
